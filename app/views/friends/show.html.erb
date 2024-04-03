@@ -1,0 +1,17 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      <h2><%= @friend.first_name %> <%= @friend.last_name %></h2>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Contact Details</h5>
+      <p class="card-text">
+        <strong>Email:</strong> <%= @friend.email %><br>
+        <strong>Phone:</strong> <%= @friend.phone %><br>
+        <strong>Instagram:</strong> <%= @friend.instagram %>
+      </p>
+      <%= link_to 'Edit', edit_friend_path(@friend), class: 'btn btn-primary' %> |
+      <%= link_to 'Back', friends_path, class: 'btn btn-secondary' %>
+    </div>
+  </div>
+</div>
