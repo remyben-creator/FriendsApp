@@ -36,6 +36,15 @@
 </div>
 <br/>
 
+<div>
+  <%= form.number_field :user_id, 
+      id: :friend,
+      value: current_user.id,
+      type: :hidden %>
+</div>
+<br/>
+
+
   <div>
     <br/>
     <%= form.submit class: "btn btn-primary"%>

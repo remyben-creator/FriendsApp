@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Todo - 
+public vs private account
+if private only you can see your friends, otherwise you can see everyones within their own html "card"
