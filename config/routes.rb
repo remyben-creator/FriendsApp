@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users, skip: [:sessions]
-  as :user do
-    delete 'sign_out', to: 'devise/sessions#destroy', as: :destroy_user_session
-  end
+  devise_for :users
 
-  
   resources :friends 
   #get 'home/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
