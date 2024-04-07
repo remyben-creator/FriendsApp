@@ -2,18 +2,20 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.assets.js_compressor = :uglifier
+
   config.enable_reloading = false
+
   config.eager_load = true
+
   config.consider_all_requests_local = false
 
   config.action_controller.perform_caching = true
-  config.assets.compile = true
+
+  config.assets.compile = false
+
   config.active_storage.service = :local
-  config.assets.initialize_on_precompile = false
-  
+
   config.force_ssl = true
-  config.assets.debug = true
 
   # Log to STDOUT by default
   config.logger = ActiveSupport::Logger.new(STDOUT)
