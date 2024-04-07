@@ -5,8 +5,6 @@ Rails.application.configure do
   config.assets.js_compressor = :uglifier
   # Code is not reloaded between requests.
   config.enable_reloading = false
-  config.assets.debug = true
-
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
