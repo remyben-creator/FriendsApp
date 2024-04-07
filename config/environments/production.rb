@@ -7,10 +7,10 @@ Rails.application.configure do
   config.eager_load = true
   config.consider_all_requests_local = false
   config.action_controller.perform_caching = true
-  config.assets.compile = false
+  config.assets.compile = true
   config.active_storage.service = :local
   config.force_ssl = true
-  config.assets.debug = true
+  config.assets.debug = false
 
   # Log to STDOUT by default
   config.logger = ActiveSupport::Logger.new(STDOUT)
